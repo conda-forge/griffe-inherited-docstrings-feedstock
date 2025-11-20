@@ -1,5 +1,5 @@
 {% set name = "griffe-inherited-docstrings" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/griffe_inherited_docstrings-{{ version }}.tar.gz
-  sha256: d179b6a6b7dc260fb892ad5b857837afd6f9de6193fc26d14463c4e9975a0cd3
+  sha256: 0a489ac4bb6093a7789d014b23083b4cbb1ab139f0b8dd878c8f3a4f8e892624
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
